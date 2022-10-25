@@ -1,0 +1,22 @@
+/* Selector {Declaration block
+(Property: Declared value;)-Declaration} */
+
+/* Specificity - (!important - in Declared value, has highest specificity - bad practice to use) -- inline(HTML), id's, classes, elements (0,0,0,0) 
+universal selector (*) has no specificity value */
+
+/* Stylesheet order matters in HTML - put your styles.css last */
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/header";
+
+@import "pages/home";

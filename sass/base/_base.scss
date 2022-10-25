@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  // better practice - box-sizing: border-box; in body element with inherit here
+  box-sizing: inherit;
+}
+
+html {
+  // if we hard code a px value the user cannot change the size from their browser
+  // based on 10px so 10/16 = .625
+  // this defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
